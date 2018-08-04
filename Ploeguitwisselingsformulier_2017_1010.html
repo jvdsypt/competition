@@ -17,6 +17,7 @@ theViewer.defaultViewer = new theViewer.Viewer({});
 
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 
 <title></title>
 </head>
@@ -25,8 +26,465 @@ theViewer.defaultViewer = new theViewer.Viewer({});
 <div id="outline">
 </div>
 </div>
+<div id="testdiv">
+	Test1
+	Test2
+</div>
+
 <div id="page-container">
-<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w1 h1" alt="" src="bg1.png"/><div class="c x1 y1 w2 h0"><div class="t m0 x2 h2 y2 ff1 fs0 fc0 sc0 ls0 ws0"> </div><div class="t m0 x3 h3 y3 ff2 fs1 fc1 sc0 ls0 ws0"> </div></div><div class="c x4 y4 w3 h4"><div class="t m0 x5 h5 y5 ff3 fs2 fc0 sc0 ls0 ws0">Ploeguitwisselin<span class="_ _0"></span>gsformulier <span class="_ _0"></span><span class="ff4">–</span> Interclubcomp<span class="_ _0"></span>etitie </div></div><div class="c x1 y1 w2 h0"><div class="t m0 x0 h6 y6 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y7 w4 h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Liga </div></div><div class="c x8 y7 w5 h7"><div class="t m0 x9 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xa y7 w6 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xb y7 w7 h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Gemengd </div></div><div class="c xc y7 w8 h7"><div class="t m0 xd h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xe y7 w9 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xf y7 wa h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Afdeling </div></div><div class="c x10 y7 wb h7"><div class="t m0 x11 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x12 y7 wc h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x13 y7 wd h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Datum </div></div><div class="c x14 y7 we h7"><div class="t m0 x15 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y9 w4 h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Provinciaal <span class="ff4">–</span> Jeug<span class="_ _1"></span>d </div></div><div class="c x8 y9 w5 h7"><div class="t m0 x9 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xa y9 w6 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xb y9 w7 h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Heren </div></div><div class="c xc y9 w8 h7"><div class="t m0 xd h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xe y9 w9 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xf y9 wa h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x10 y9 wb h7"><div class="t m0 x11 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x12 y9 wc h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x13 y9 wd h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Beginuur </div></div><div class="c x14 y9 we h7"><div class="t m0 x15 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 ya w4 h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Provinciaal <span class="ff4">–</span> Volw<span class="_ _1"></span>assenen </div></div><div class="c x8 ya w5 h7"><div class="t m0 x9 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xa ya w6 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xb ya w7 h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Dames </div></div><div class="c xc ya w8 h7"><div class="t m0 xd h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xe ya w9 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c xf ya wa h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Reeks </div></div><div class="c x10 ya wb h7"><div class="t m0 x11 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x12 ya wc h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x13 ya wd h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Einduur </div></div><div class="c x14 ya we h7"><div class="t m0 x15 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1 y1 w2 h0"><div class="t m0 x0 h6 yb ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x4 yc wf h8"><div class="t m0 x9 h9 yd ff3 fs3 fc0 sc0 ls0 ws0">Ontmoeting </div></div><div class="c x16 yc w10 h8"><div class="t m0 x2 h9 yd ff3 fs3 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 yc w11 h8"><div class="t m0 x18 h9 yd ff3 fs3 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 ye w12 ha"><div class="t m0 x7 h6 yf ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x4 ye w13 ha"><div class="t m0 x7 h6 yf ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x19 ye w14 ha"><div class="t m0 x7 h6 yf ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a ye w15 ha"><div class="t m0 x7 h6 yf ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b ye w16 ha"><div class="t m0 x1c h9 yd ff3 fs3 fc0 sc0 ls0 ws0">Naam </div></div><div class="c x17 ye w17 ha"><div class="t m0 x1d h9 yd ff3 fs3 fc0 sc0 ls0 ws0">Voornaam </div></div><div class="c x1e ye w18 ha"><div class="t m0 x1f h9 yd ff3 fs3 fc0 sc0 ls0 ws0">Klas. </div></div><div class="c x20 ye w19 ha"><div class="t m0 x21 h9 yd ff3 fs3 fc0 sc0 ls1 ws0">Lidnummer<span class="ls0"> </span></div></div><div class="c x6 y10 w12 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x4 y10 w13 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x19 y10 w14 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y10 w1a hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y10 w1b hb"><div class="t m0 x2 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y10 w1c hb"><div class="t m0 x22 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y10 w1d hb"><div class="t m0 x23 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y10 w1e hb"><div class="t m0 x24 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y12 w1f hc"><div class="t m0 x23 h9 yd ff3 fs3 fc0 sc0 ls2 ws0">Ploegkapitein<span class="ls0"> </span></div></div><div class="c x1a y12 w1a hc"><div class="t m0 x7 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y12 w1b hc"><div class="t m0 x2 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y12 w1c hc"><div class="t m0 x22 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y12 w1d hc"><div class="t m0 x23 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y12 w1e hc"><div class="t m0 x24 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y14 w20 hb"><div class="t m0 x9 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x4 y14 w21 hb"><div class="t m0 xd h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x25 y14 w22 hb"><div class="t m0 x26 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y14 w1a hb"><div class="t m0 x27 h6 y11 ff3 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y14 w1b hb"><div class="t m0 x2 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y14 w1c hb"><div class="t m0 x22 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y14 w1d hb"><div class="t m0 x23 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y14 w1e hb"><div class="t m0 x24 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y15 w23 hd"><div class="t m0 x28 h6 y16 ff1 fs1 fc0 sc0 ls3 ws0">HD<span class="ls0"> </span></div></div><div class="c x4 y15 w24 hd"><div class="t m0 x1f h6 y16 ff1 fs1 fc0 sc0 ls0 ws0">HD 1 </div></div><div class="c x25 y15 w25 hd"><div class="t m0 x1f h6 y16 ff1 fs1 fc0 sc0 ls4 ws0">DD 1<span class="ls0"> </span></div></div><div class="c x1a y17 w26 he"><div class="t m0 x29 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">T </div></div><div class="c x1b y17 w16 he"><div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y17 w17 he"><div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y17 w18 he"><div class="t m0 x26 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y17 w19 he"><div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y15 w26 h7"><div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">I </div></div><div class="c x1b y15 w16 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y15 w17 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y15 w18 h7"><div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y15 w19 h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y19 w23 hd"><div class="t m0 x28 h6 y1a ff1 fs1 fc0 sc0 ls4 ws0">DD<span class="ls0"> </span></div></div><div class="c x4 y19 w24 hd"><div class="t m0 x1f h6 y1a ff1 fs1 fc0 sc0 ls0 ws0">HD 2 </div></div><div class="c x25 y19 w25 hd"><div class="t m0 x1f h6 y1a ff1 fs1 fc0 sc0 ls4 ws0">DD 2<span class="ls0"> </span></div></div><div class="c x1a y1b w26 h7"><div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">T </div></div><div class="c x1b y1b w16 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y1b w17 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y1b w18 h7"><div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y1b w19 h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y19 w26 he"><div class="t m0 x7 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">U </div></div><div class="c x1b y19 w16 he"><div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y19 w17 he"><div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y19 w18 he"><div class="t m0 x26 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y19 w19 he"><div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y1c w23 hd"><div class="t m0 x29 h6 y1a ff1 fs1 fc0 sc0 ls0 ws0">GD 1 </div></div><div class="c x4 y1c w24 hd"><div class="t m0 x1f h6 y1a ff1 fs1 fc0 sc0 ls0 ws0">HD 3 </div></div><div class="c x25 y1c w25 hd"><div class="t m0 x1f h6 y1a ff1 fs1 fc0 sc0 ls4 ws0">DD 3<span class="ls0"> </span></div></div><div class="c x1a y1d w26 h7"><div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">L </div></div><div class="c x1b y1d w16 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y1d w17 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y1d w18 h7"><div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y1d w19 h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y1c w26 h7"><div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">A </div></div><div class="c x1b y1c w16 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y1c w17 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y1c w18 h7"><div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y1c w19 h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y1e w23 hf"><div class="t m0 x29 h6 y16 ff1 fs1 fc0 sc0 ls0 ws0">GD 2 </div></div><div class="c x4 y1e w24 hf"><div class="t m0 x1f h6 y16 ff1 fs1 fc0 sc0 ls0 ws0">HD 4 </div></div><div class="c x25 y1e w25 hf"><div class="t m0 x1f h6 y16 ff1 fs1 fc0 sc0 ls4 ws0">DD 4<span class="ls0"> </span></div></div><div class="c x1a y1f w26 h10"><div class="t m0 x29 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">R </div></div><div class="c x1b y1f w16 h10"><div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y1f w17 h10"><div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y1f w18 h10"><div class="t m0 x26 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y1f w19 h10"><div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y1e w26 h7"><div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">I </div></div><div class="c x1b y1e w16 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y1e w17 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y1e w18 h7"><div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y1e w19 h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y20 w20 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x4 y20 w21 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x25 y20 w22 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y20 w1a hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y20 w1b hb"><div class="t m0 x2 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y20 w1c hb"><div class="t m0 x22 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y20 w1d hb"><div class="t m0 x23 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y20 w1e hb"><div class="t m0 x24 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y21 w23 he"><div class="t m0 x7 h6 y18 ff1 fs1 fc0 sc0 ls5 ws0">  <span class="ls0">HE1  </span></div></div><div class="c x4 y21 w24 he"><div class="t m0 x1f h6 y18 ff1 fs1 fc0 sc0 ls0 ws0">HE 1 </div></div><div class="c x25 y21 w25 he"><div class="t m0 x1f h6 y18 ff1 fs1 fc0 sc0 ls4 ws0">DE<span class="ls0"> 1 </span></div></div><div class="c x1a y21 w26 he"><div class="t m0 x29 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">S </div></div><div class="c x1b y21 w27 he"><div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y21 w28 he"><div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y21 w29 he"><div class="t m0 x23 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y21 w2a he"><div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y22 w23 h7"><div class="t m0 x27 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">HE 2 </div></div><div class="c x4 y22 w24 h7"><div class="t m0 x1f h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">HE 2 </div></div><div class="c x25 y22 w25 h7"><div class="t m0 x1f h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">DE 2 </div></div><div class="c x1a y22 w26 h7"><div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">S </div></div><div class="c x1b y22 w27 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y22 w28 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y22 w29 h7"><div class="t m0 x23 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y22 w2a h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y23 w23 h7"><div class="t m0 x27 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">DE 1 </div></div><div class="c x4 y23 w24 h7"><div class="t m0 x1f h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">HE 3 </div></div><div class="c x25 y23 w25 h7"><div class="t m0 x1f h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">DE 3 </div></div><div class="c x1a y23 w26 h7"><div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">E </div></div><div class="c x1b y23 w27 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y23 w28 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y23 w29 h7"><div class="t m0 x23 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y23 w2a h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y24 w23 he"><div class="t m0 x27 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0">DE 2 </div></div><div class="c x4 y24 w24 he"><div class="t m0 x1f h6 y18 ff1 fs1 fc0 sc0 ls0 ws0">HE 4 </div></div><div class="c x25 y24 w25 he"><div class="t m0 x1f h6 y18 ff1 fs1 fc0 sc0 ls0 ws0">DE 4 </div></div><div class="c x1a y24 w26 he"><div class="t m0 x7 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">N </div></div><div class="c x1b y24 w27 he"><div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y24 w28 he"><div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y24 w29 he"><div class="t m0 x23 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y24 w2a he"><div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y25 w20 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x4 y25 w21 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x25 y25 w22 hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y25 w1a hb"><div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y25 w1b hb"><div class="t m0 x2 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y25 w1c hb"><div class="t m0 x22 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y25 w1d hb"><div class="t m0 x23 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y25 w1e hb"><div class="t m0 x24 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x6 y26 w1f h11"><div class="t m0 x2a h9 y27 ff3 fs3 fc0 sc0 ls0 ws0">Invallers </div></div><div class="c x1a y28 w15 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y28 w16 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y28 w17 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y28 w18 h7"><div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y28 w19 h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y29 w15 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y29 w16 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y29 w17 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y29 w18 h7"><div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y29 w19 h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y2a w15 h10"><div class="t m0 x7 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y2a w16 h10"><div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y2a w17 h10"><div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y2a w18 h10"><div class="t m0 x26 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y2a w19 h10"><div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1a y26 w15 h7"><div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1b y26 w16 h7"><div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x17 y26 w17 h7"><div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1e y26 w18 h7"><div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x20 y26 w19 h7"><div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x1 y1 w2 h0"><div class="t m0 x2b h12 y2b ff1 fs4 fc0 sc0 ls0 ws0"> </div><div class="t m0 x2b h12 y2c ff1 fs4 fc0 sc0 ls0 ws0"> </div><div class="t m0 x2c h13 y2d ff1 fs4 fc0 sc0 ls0 ws0">Handtekening ploegkapitein,<span class="ff5 fs1"> </span></div></div></div><div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
+<div id="pf1" class="pf w0 h0" data-page-no="1">
+	<div class="pc pc1 w0 h0">
+		<img class="bi x0 y0 w1 h1" alt="" src="bg1.png"/>
+		<div class="c x1 y1 w2 h0">
+			<div class="t m0 x2 h2 y2 ff1 fs0 fc0 sc0 ls0 ws0"> 
+			</div>
+			<div class="t m0 x3 h3 y3 ff2 fs1 fc1 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c x4 y4 w3 h4">
+			<div class="t m0 x5 h5 y5 ff3 fs2 fc0 sc0 ls0 ws0">Ploeguitwisselin<span class="_ _0"></span>gsformulier <span class="_ _0"></span><span class="ff4">–</span> Interclubcomp<span class="_ _0"></span>etitie </div>
+		</div>
+		<div class="c x1 y1 w2 h0">
+			<div class="t m0 x0 h6 y6 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c x6 y7 w4 h7">
+			<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Liga </div>
+		</div>
+		<div class="c x8 y7 w5 h7">
+			<div class="t m0 x9 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c xa y7 w6 h7">
+			<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c xb y7 w7 h7">
+			<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Gemengd </div>
+		</div>
+		<div class="c xc y7 w8 h7">
+			<div class="t m0 xd h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c xe y7 w9 h7">
+			<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c xf y7 wa h7">
+			<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Afdeling 
+			</div>
+		</div>
+		<div class="c x10 y7 wb h7">
+			<div class="t m0 x11 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c x12 y7 wc h7">
+			<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c x13 y7 wd h7">
+			<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Datum 
+			</div>
+		</div>
+		<div class="c x14 y7 we h7">
+			<div class="t m0 x15 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c x6 y9 w4 h7">
+			<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Provinciaal <span class="ff4">–</span> Jeug<span class="_ _1"></span>d 
+			</div>
+		</div>
+		<div class="c x8 y9 w5 h7">
+			<div class="t m0 x9 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c xa y9 w6 h7">
+			<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c xb y9 w7 h7">
+			<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Heren 
+			</div>
+		</div>
+		<div class="c xc y9 w8 h7">
+			<div class="t m0 xd h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c xe y9 w9 h7">
+			<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c xf y9 wa h7">
+			<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0"> 
+			</div>
+		</div>
+		<div class="c x10 y9 wb h7"><div class="t m0 x11 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div><div class="c x12 y9 wc h7">
+<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x13 y9 wd h7">
+<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Beginuur </div></div>
+
+<div class="c x14 y9 we h7">
+
+<div class="t m0 x15 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+
+<div class="c x6 ya w4 h7">
+
+<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Provinciaal <span class="ff4">–</span> Volw<span class="_ _1"></span>assenen </div></div>
+
+<div class="c x8 ya w5 h7">
+
+<div class="t m0 x9 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+
+<div class="c xa ya w6 h7">
+
+<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+
+<div class="c xb ya w7 h7">
+
+<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Dames </div></div>
+
+<div class="c xc ya w8 h7">
+
+<div class="t m0 xd h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+
+<div class="c xe ya w9 h7">
+
+<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+
+<div class="c xf ya wa h7">
+
+<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Reeks </div></div>
+
+<div class="c x10 ya wb h7">
+
+<div class="t m0 x11 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+
+<div class="c x12 ya wc h7">
+
+<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+
+<div class="c x13 ya wd h7">
+
+<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">Einduur </div></div>
+
+<div class="c x14 ya we h7">
+
+<div class="t m0 x15 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1 y1 w2 h0">
+<div class="t m0 x0 h6 yb ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x4 yc wf h8">
+<div class="t m0 x9 h9 yd ff3 fs3 fc0 sc0 ls0 ws0">Ontmoeting </div></div>
+<div class="c x16 yc w10 h8">
+<div class="t m0 x2 h9 yd ff3 fs3 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 yc w11 h8">
+<div class="t m0 x18 h9 yd ff3 fs3 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 ye w12 ha">
+<div class="t m0 x7 h6 yf ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x4 ye w13 ha">
+<div class="t m0 x7 h6 yf ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x19 ye w14 ha">
+<div class="t m0 x7 h6 yf ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a ye w15 ha">
+<div class="t m0 x7 h6 yf ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b ye w16 ha">
+<div class="t m0 x1c h9 yd ff3 fs3 fc0 sc0 ls0 ws0">Naam </div></div>
+<div class="c x17 ye w17 ha">
+<div class="t m0 x1d h9 yd ff3 fs3 fc0 sc0 ls0 ws0">Voornaam </div></div>
+<div class="c x1e ye w18 ha">
+<div class="t m0 x1f h9 yd ff3 fs3 fc0 sc0 ls0 ws0">Klas. </div></div>
+<div class="c x20 ye w19 ha">
+<div class="t m0 x21 h9 yd ff3 fs3 fc0 sc0 ls1 ws0">Lidnummer<span class="ls0"> </span></div></div>
+<div class="c x6 y10 w12 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x4 y10 w13 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x19 y10 w14 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y10 w1a hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y10 w1b hb">
+<div class="t m0 x2 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y10 w1c hb">
+<div class="t m0 x22 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y10 w1d hb">
+<div class="t m0 x23 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y10 w1e hb">
+<div class="t m0 x24 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y12 w1f hc">
+<div class="t m0 x23 h9 yd ff3 fs3 fc0 sc0 ls2 ws0">Ploegkapitein<span class="ls0"> </span></div></div>
+<div class="c x1a y12 w1a hc">
+<div class="t m0 x7 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y12 w1b hc">
+<div class="t m0 x2 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y12 w1c hc">
+<div class="t m0 x22 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y12 w1d hc">
+<div class="t m0 x23 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y12 w1e hc">
+<div class="t m0 x24 h6 y13 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y14 w20 hb">
+<div class="t m0 x9 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x4 y14 w21 hb">
+<div class="t m0 xd h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x25 y14 w22 hb">
+<div class="t m0 x26 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y14 w1a hb">
+<div class="t m0 x27 h6 y11 ff3 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y14 w1b hb">
+<div class="t m0 x2 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y14 w1c hb">
+<div class="t m0 x22 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y14 w1d hb">
+<div class="t m0 x23 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y14 w1e hb">
+<div class="t m0 x24 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y15 w23 hd">
+<div class="t m0 x28 h6 y16 ff1 fs1 fc0 sc0 ls3 ws0">HD<span class="ls0"> </span></div></div>
+<div class="c x4 y15 w24 hd">
+<div class="t m0 x1f h6 y16 ff1 fs1 fc0 sc0 ls0 ws0">HD 1 </div></div>
+<div class="c x25 y15 w25 hd">
+<div class="t m0 x1f h6 y16 ff1 fs1 fc0 sc0 ls4 ws0">DD 1<span class="ls0"> </span></div></div>
+<div class="c x1a y17 w26 he">
+<div class="t m0 x29 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">T </div></div>
+<div class="c x1b y17 w16 he">
+<div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y17 w17 he">
+<div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y17 w18 he">
+<div class="t m0 x26 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y17 w19 he">
+<div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y15 w26 h7">
+<div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">I </div></div>
+<div class="c x1b y15 w16 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y15 w17 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y15 w18 h7">
+<div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y15 w19 h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y19 w23 hd">
+<div class="t m0 x28 h6 y1a ff1 fs1 fc0 sc0 ls4 ws0">DD<span class="ls0"> </span></div></div>
+<div class="c x4 y19 w24 hd">
+<div class="t m0 x1f h6 y1a ff1 fs1 fc0 sc0 ls0 ws0">HD 2 </div></div>
+<div class="c x25 y19 w25 hd">
+<div class="t m0 x1f h6 y1a ff1 fs1 fc0 sc0 ls4 ws0">DD 2<span class="ls0"> </span></div></div>
+<div class="c x1a y1b w26 h7">
+<div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">T </div></div>
+<div class="c x1b y1b w16 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y1b w17 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y1b w18 h7">
+<div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y1b w19 h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y19 w26 he">
+<div class="t m0 x7 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">U </div></div>
+<div class="c x1b y19 w16 he">
+<div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y19 w17 he">
+<div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y19 w18 he">
+<div class="t m0 x26 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y19 w19 he">
+<div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y1c w23 hd">
+<div class="t m0 x29 h6 y1a ff1 fs1 fc0 sc0 ls0 ws0">GD 1 </div></div>
+<div class="c x4 y1c w24 hd">
+<div class="t m0 x1f h6 y1a ff1 fs1 fc0 sc0 ls0 ws0">HD 3 </div></div>
+<div class="c x25 y1c w25 hd">
+<div class="t m0 x1f h6 y1a ff1 fs1 fc0 sc0 ls4 ws0">DD 3<span class="ls0"> </span></div></div>
+<div class="c x1a y1d w26 h7">
+<div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">L </div></div>
+<div class="c x1b y1d w16 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y1d w17 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y1d w18 h7">
+<div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y1d w19 h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y1c w26 h7">
+<div class="t m0 x7 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">A </div></div>
+<div class="c x1b y1c w16 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y1c w17 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y1c w18 h7">
+<div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y1c w19 h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y1e w23 hf">
+<div class="t m0 x29 h6 y16 ff1 fs1 fc0 sc0 ls0 ws0">GD 2 </div></div>
+<div class="c x4 y1e w24 hf">
+<div class="t m0 x1f h6 y16 ff1 fs1 fc0 sc0 ls0 ws0">HD 4 </div></div>
+<div class="c x25 y1e w25 hf">
+<div class="t m0 x1f h6 y16 ff1 fs1 fc0 sc0 ls4 ws0">DD 4<span class="ls0"> </span></div></div>
+<div class="c x1a y1f w26 h10">
+<div class="t m0 x29 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">R </div></div>
+<div class="c x1b y1f w16 h10">
+<div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y1f w17 h10">
+<div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y1f w18 h10">
+<div class="t m0 x26 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y1f w19 h10">
+<div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y1e w26 h7">
+<div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">I </div></div>
+<div class="c x1b y1e w16 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y1e w17 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y1e w18 h7">
+<div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y1e w19 h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y20 w20 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x4 y20 w21 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x25 y20 w22 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y20 w1a hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y20 w1b hb">
+<div class="t m0 x2 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y20 w1c hb">
+<div class="t m0 x22 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y20 w1d hb">
+<div class="t m0 x23 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y20 w1e hb">
+<div class="t m0 x24 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y21 w23 he">
+<div class="t m0 x7 h6 y18 ff1 fs1 fc0 sc0 ls5 ws0">  <span class="ls0">HE1  </span></div></div>
+<div class="c x4 y21 w24 he">
+<div class="t m0 x1f h6 y18 ff1 fs1 fc0 sc0 ls0 ws0">HE 1 </div></div>
+<div class="c x25 y21 w25 he">
+<div class="t m0 x1f h6 y18 ff1 fs1 fc0 sc0 ls4 ws0">DE<span class="ls0"> 1 </span></div></div>
+<div class="c x1a y21 w26 he">
+<div class="t m0 x29 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">S </div></div>
+<div class="c x1b y21 w27 he">
+<div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y21 w28 he">
+<div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y21 w29 he">
+<div class="t m0 x23 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y21 w2a he">
+<div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y22 w23 h7">
+<div class="t m0 x27 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">HE 2 </div></div>
+<div class="c x4 y22 w24 h7">
+<div class="t m0 x1f h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">HE 2 </div></div>
+<div class="c x25 y22 w25 h7">
+<div class="t m0 x1f h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">DE 2 </div></div>
+<div class="c x1a y22 w26 h7">
+<div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">S </div></div>
+<div class="c x1b y22 w27 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y22 w28 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y22 w29 h7">
+<div class="t m0 x23 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y22 w2a h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y23 w23 h7">
+<div class="t m0 x27 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">DE 1 </div></div>
+<div class="c x4 y23 w24 h7">
+<div class="t m0 x1f h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">HE 3 </div></div>
+<div class="c x25 y23 w25 h7">
+<div class="t m0 x1f h6 y8 ff1 fs1 fc0 sc0 ls0 ws0">DE 3 </div></div>
+<div class="c x1a y23 w26 h7">
+<div class="t m0 x29 h6 y8 ff3 fs1 fc0 sc0 ls0 ws0">E </div></div>
+<div class="c x1b y23 w27 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y23 w28 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y23 w29 h7">
+<div class="t m0 x23 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y23 w2a h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y24 w23 he">
+<div class="t m0 x27 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0">DE 2 </div></div>
+<div class="c x4 y24 w24 he">
+<div class="t m0 x1f h6 y18 ff1 fs1 fc0 sc0 ls0 ws0">HE 4 </div></div>
+<div class="c x25 y24 w25 he">
+<div class="t m0 x1f h6 y18 ff1 fs1 fc0 sc0 ls0 ws0">DE 4 </div></div>
+<div class="c x1a y24 w26 he">
+<div class="t m0 x7 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">N </div></div>
+<div class="c x1b y24 w27 he">
+<div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y24 w28 he">
+<div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y24 w29 he">
+<div class="t m0 x23 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y24 w2a he">
+<div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y25 w20 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x4 y25 w21 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x25 y25 w22 hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y25 w1a hb">
+<div class="t m0 x7 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y25 w1b hb">
+<div class="t m0 x2 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y25 w1c hb">
+<div class="t m0 x22 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y25 w1d hb">
+<div class="t m0 x23 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y25 w1e hb">
+<div class="t m0 x24 h6 y11 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x6 y26 w1f h11">
+<div class="t m0 x2a h9 y27 ff3 fs3 fc0 sc0 ls0 ws0">Invallers </div></div>
+<div class="c x1a y28 w15 h7">
+<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y28 w16 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y28 w17 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y28 w18 h7">
+<div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y28 w19 h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y29 w15 h7">
+<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y29 w16 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y29 w17 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y29 w18 h7">
+<div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y29 w19 h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y2a w15 h10">
+<div class="t m0 x7 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y2a w16 h10">
+<div class="t m0 x2 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y2a w17 h10">
+<div class="t m0 x22 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y2a w18 h10">
+<div class="t m0 x26 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y2a w19 h10">
+<div class="t m0 x24 h6 y18 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1a y26 w15 h7">
+<div class="t m0 x7 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1b y26 w16 h7">
+<div class="t m0 x2 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x17 y26 w17 h7">
+<div class="t m0 x22 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1e y26 w18 h7">
+<div class="t m0 x26 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x20 y26 w19 h7">
+<div class="t m0 x24 h6 y8 ff1 fs1 fc0 sc0 ls0 ws0"> </div></div>
+<div class="c x1 y1 w2 h0">
+<div class="t m0 x2b h12 y2b ff1 fs4 fc0 sc0 ls0 ws0"> </div>
+<div class="t m0 x2b h12 y2c ff1 fs4 fc0 sc0 ls0 ws0"> </div>
+<div class="t m0 x2c h13 y2d ff1 fs4 fc0 sc0 ls0 ws0">Handtekening ploegkapitein,<span class="ff5 fs1"> </span></div></div></div>
+<div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
 </div>
 <div class="loading-indicator">
 
@@ -34,7 +492,7 @@ theViewer.defaultViewer = new theViewer.Viewer({});
 <script>
 	console.log('start');
 	var doc = new jsPDF();
-doc.addHTML();
+doc.fromHTML($('#testdiv').get(0), 20, 20, {'width':500});
 doc.save('Test.pdf');
 </script>
 </body>
