@@ -29,7 +29,16 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body>
+<!-- <style>
+.siblings * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+</style> -->
+<body class='siblings'>
 
 
 	<div class="container-contact100">
@@ -43,7 +52,7 @@
 					<span class="label-input100">Ploeg</span>
 					<div>
 						<select class="js-select2" name="ploeg" id="ploeg">
-							<option disabled selected value> -- select an option -- </option>
+							<option disabled selected value='0'> -- select an option -- </option>
 							<option>Heren</option>
 							<option>Gemengd</option>
 						</select>
@@ -55,8 +64,8 @@
 					<div class="wrap-input100 col-md-12 col-sm-12 col-lg-12 validate-input bg1" data-validate="Please Type Your Name">
 						<span><label class="label-input100" for='he1'>Heren Enkel 1</label></span>
 						<div>
-							<select class="js-select2x herencomp mixm" name="he1" id="he1">
-								<option disabled selected value> -- select an option -- </option>
+							<select class="js-select2x herencomp mixm enkel" name="he1" id="he1">
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
@@ -67,8 +76,8 @@
 					<div class="wrap-input100 col-md-12 col-sm-12 col-lg-12 validate-input bg1" data-validate="Please Type Your Name">
 						<span><label class="label-input100" for='he2'>Heren Enkel 2</label></span>
 						<div>
-							<select class="js-select2x herencomp mixm" name="he2">
-								<option disabled selected value> -- select an option -- </option>
+							<select class="js-select2x herencomp mixm enkel" name="he2">
+								<option disabled selected value=''0> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
@@ -79,8 +88,8 @@
 					<div class="wrap-input100 col-md-12 col-sm-12 col-lg-12 validate-input bg1" data-validate="Please Type Your Name">
 						<span><label class="label-input100" for='he3'>Heren Enkel 3</label></span>
 						<div>
-							<select class="js-select2x herencomp mixd" name="he3">
-								<option disabled selected value> -- select an option -- </option>
+							<select class="js-select2x herencomp mixd enkel" name="he3">
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
@@ -91,8 +100,8 @@
 					<div class="wrap-input100 col-md-12 col-sm-12 col-lg-12 validate-input bg1" data-validate="Please Type Your Name">
 						<span><label class="label-input100" for='he4'>Heren Enkel 4</label></span>
 						<div>
-							<select class="js-select2x herencomp mixd" name="he4">
-								<option disabled selected value> -- select an option -- </option>
+							<select class="js-select2x herencomp mixd enkel" name="he4">
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
@@ -104,13 +113,13 @@
 						<span><label class="label-input100" for='hd1'>Heren Dubbel 1</label></span>
 						<div>
 							<select class="js-select2x herencomp mixm" name="hd1a">
-								<option disabled selected value> -- select an option -- </option>
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
 							<div class="dropDownSelect2"></div>
 							<select class="js-select2x herencomp mixm" name="hd1b">
-								<option disabled selected value> -- select an option -- </option>
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
@@ -123,13 +132,13 @@
 						<span><label class="label-input100" for='hd2'>Heren Dubbel 2</label></span>
 						<div>
 							<select class="js-select2x herencomp mixd" name="hd2a">
-								<option disabled selected value> -- select an option -- </option>
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
 							<div class="dropDownSelect2"></div>
 							<select class="js-select2x herencomp mixd" name="hd2b">
-								<option disabled selected value> -- select an option -- </option>
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
@@ -141,13 +150,13 @@
 						<span><label class="label-input100" for='hd3'>Heren Dubbel 3</label></span>
 						<div>
 							<select class="js-select2x herencomp mixm" name="hd3a">
-								<option disabled selected value> -- select an option -- </option>
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
 							<div class="dropDownSelect2"></div>
 							<select class="js-select2x herencomp mixd" name="hd3b">
-								<option disabled selected value> -- select an option -- </option>
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
@@ -159,13 +168,13 @@
 						<span><label class="label-input100" for='hd4'>Heren Dubbel 4</label></span>
 						<div>
 							<select class="js-select2x herencomp mixm" name="hd4a" id = "hd4a">
-								<option disabled selected value> -- select an option -- </option>
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
 							<div class="dropDownSelect2"></div>
 							<select class="js-select2x herencomp mixd" name="hd4b">
-								<option disabled selected value> -- select an option -- </option>
+								<option disabled selected value='0'> -- select an option -- </option>
 								<option>Speler 1</option>
 								<option>Speler 2</option>
 							</select>
@@ -193,6 +202,8 @@
 
 
 
+
+
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -211,7 +222,7 @@
 	    	var val = $('#ploeg option:selected').text();
 	    	if(val == "Heren"){
 	    		var heren = 'heren';
-		        	$.ajax({
+		        $.ajax({
 		            url: 'getOptions.php',
 		            data: {functie:heren},
 		            type: 'post',
@@ -219,9 +230,8 @@
 		            success:function(response){
 		                var len = response.length;
 		                $('.herencomp').each(function(){
-		                	console.log('heren');
 		                	$(".herencomp").empty();
-			                $(".herencomp").append("<option disabled selected value> -- select an option -- </option>");
+			                $(".herencomp").append("<option disabled selected value ='0'> -- select an option -- </option>");
 			                for( var i = 0; i<len; i++){
 			                    var id = response[i]['id'];
 			                    var name = response[i]['name'];
@@ -240,18 +250,15 @@
 	            type: 'post',
 	            dataType: 'json',
 	            success:function(response){
-	            	console.log('yes');
 	            	var len = response.length;
 	                $('.mixm').each(function(){
-	                	console.log('test');
 	                	$(".mixm").empty();
-		                $(".mixm").append("<option disabled selected value> -- select an option -- </option>");
+		                $(".mixm").append("<option disabled selected value = '0'> -- select an option -- </option>");
 		                for( var i = 0; i<len; i++){
 	                    var id = response[i]['id'];
 	                    var name = response[i]['name'];
 	                    var klassement = response[i]["klassement"];
 	                    var geslacht = response[i]["geslacht"];
-	                    console.log(geslacht);
 	                    if(geslacht == 'M'){
 	                    	$(".mixm").append("<option value='"+id+"'>"+name+ "(" + klassement + ")" + "</option>");
 	                    }   
@@ -259,18 +266,17 @@
 	                });
 	                $('.mixd').each(function(){
 	                	$(".mixd").empty();
-		                $(".mixd").append("<option disabled selected value> -- select an option -- </option>");
+		                $(".mixd").append("<option disabled selected value = '0'> -- select an option -- </option>");
 		                for( var i = 0; i<len; i++){
-	                    var id = response[i]['id'];
-	                    var name = response[i]['name'];
-	                    var klassement = response[i]["klassement"];
-	                    var geslacht = response[i]["geslacht"];
-	                    console.log(geslacht);
-	                    if(geslacht == 'V'){
-	                    	$(".mixd").append("<option value='"+id+"'>"+name+ "(" + klassement + ")" + "</option>");
-	                    }
+		                    var id = response[i]['id'];
+		                    var name = response[i]['name'];
+		                    var klassement = response[i]["klassement"];
+		                    var geslacht = response[i]["geslacht"];
+		                    if(geslacht == 'V'){
+		                    	$(".mixd").append("<option value='"+id+"'>"+name+ "(" + klassement + ")" + "</option>");
+		                    }
 	                    
-	                }
+	                	}
 	                });
 	            }
 	        });
@@ -337,49 +343,80 @@
         $("label[for='hd2']").html(dubbel3[$(this).val()]);
     });
 
+		// (function () {
+		//     var previous;
+
+		//     $(".enkel").on('focus', function () {
+		//         // Store the current value on focus and on change
+		//         previous = this.value;
+		//     }).change(function() {
+		//         // Do something with the previous value after the change
+		//         alert(previous);
+
+		//         // Make sure the previous value is updated
+		//         previous = this.value;
+		//     });
+		// })();
+
+		$(document).ready(function(){
+		    // $(".enkel").siblings().css({"color": "red", "border": "2px solid red"});
+		   
+		    $('.enkel').change(function() {
+			    var value = $(this).val();
+			 	console.log(value);
+			 	// var len = $( '.enkel').siblings()
+				 //  .css({"color": "red", "border": "2px solid green"})
+				 //  .length;
+				 //  console.log(len);
+			    $('.enkel').each(function() {
+			    	if ( $(this).val() === value ) {
+			    		console.log('done');
+            			$(this).children().each(function() {
+            				console.log('second done');
+            				if ( $(this).val() === value ) {
+            					console.log('blabla');
+            					console.log($(this).val());
+								$(this).children().attr('disabled', true);
+							}
+						});
+            			
+			    	// $(this).append("<option value='3'>TESTEN</option>");
+			        }
+			    });
+			    var spelers = []
+			    $('.enkel').each(function() {
+			    	if($(this).val()==null){
+			    		spelers.push('0');
+			    	}else{
+				    	spelers.push($(this).val());
+			    	}
+
+				});
+				var check = 'check';
+				$.ajax({
+					url: 'getOptions.php',
+					data: {functie:check, spelers: spelers},
+					type: 'post',
+					dataType: 'json',
+					success:function(response){
+						console.log(response);
+						var len = response.length;
+						var klassement = [];
+						for( var i = 0; i<len; i++){
+							klassement.push(response[i]["klassement"]);
+						}
+						for (var j = 0; j < spelers.length; j++) {
+							console.log(spelers[j] + ': ' + klassement[j]);
+						}
+					}
+				}); 
+			});
+
+		    
+		});
+
 	</script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/noui/nouislider.min.js"></script>
-	<script>
-	    var filterBar = document.getElementById('filter-bar');
-
-	    noUiSlider.create(filterBar, {
-	        start: [ 1500, 3900 ],
-	        connect: true,
-	        range: {
-	            'min': 1500,
-	            'max': 7500
-	        }
-	    });
-
-	    var skipValues = [
-	    document.getElementById('value-lower'),
-	    document.getElementById('value-upper')
-	    ];
-
-	    filterBar.noUiSlider.on('update', function( values, handle ) {
-	        skipValues[handle].innerHTML = Math.round(values[handle]);
-	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
-	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
-	    });
-	</script>
-<!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
 
 </body>
 </html>
